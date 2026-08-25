@@ -1,0 +1,14 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+
+libqrw.so
+libqrw.dylib
+
+params/
+results/
+logs/
+*.npz
