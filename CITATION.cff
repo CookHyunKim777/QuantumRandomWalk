@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the associated manuscript."
+type: software
+title: "Universal scaling and protocol-dependent amplitude in hybrid quantum walks"
+authors:
+  - family-names: Kim
+    given-names: Cook Hyun
+  - family-names: Park
+    given-names: Jaesub
+  - family-names: Han
+    given-names: Namshik
