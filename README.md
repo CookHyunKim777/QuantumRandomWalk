@@ -2,8 +2,7 @@
 
 This repository contains the simulation and analysis code for two quantum--classical hybrid walks on a one-dimensional ring:
 
-- **QRW-A (additive protocol):** at every time step, the density matrix is updated by the convex combination
-  \(\rho_{t+1}=\alpha\mathcal{U}[\rho_t]+(1-\alpha)\mathcal{T}[\rho_t]\).
+- **QRW-A (additive protocol):** at every time step, the density matrix is updated by the convex combination $\rho_{t+1}=\alpha\mathcal{U}[\rho_t]+(1-\alpha)\mathcal{T}[\rho_t]$.
 - **QRW-M (multiplicative protocol):** each cycle applies `n_qw` quantum steps followed by one classical step.
 
 The code records the mean squared displacement (MSD), total variation distance (TVD), final probability distributions, and selected probability snapshots. The accompanying notebook extracts the diffusion coefficient and evaluates the analytical QRW-A truncations and exact QRW-M recurrence used in the manuscript.
@@ -80,7 +79,7 @@ make verify
 
    The notebook creates `params/`, `results/`, and `logs/` under the repository root. Review the requested SLURM time before executing the submission cells.
 
-3. After the simulations finish, open `diffusion_coefficient.ipynb`. The numerical procedure divides the MSD time series into consecutive 200-step blocks, retains blocks satisfying \(|\beta-1|<0.05\), and reports a diffusion coefficient only when at least three blocks are retained.
+3. After the simulations finish, open `diffusion_coefficient.ipynb`. The numerical procedure divides the MSD time series into consecutive 200-step blocks, retains blocks satisfying $|\beta-1|<0.05$, and reports a diffusion coefficient only when at least three blocks are retained.
 
 4. The same notebook evaluates the exact Laurent-polynomial recurrence for QRW-M and the `L=1` and `L=2` transfer-operator truncations for QRW-A.
 
